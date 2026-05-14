@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRYMAGE | ERP & Accounting Software</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#070235",
+              secondary: "#712ae2",
+              "vibrant-violet": "#7C3AED",
+              "deep-navy": "#1E1B4B",
+              "heritage-gold": "#D4AF37",
+              "slate-gray": "#475569",
+              surface: "#f7f9fb",
+              "primary-container": "#1e1b4b",
+              "outline-variant": "#c8c5d0",
+            },
+            fontFamily: {
+              sans: ["DM Sans", "sans-serif"],
+              serif: ["EB Garamond", "serif"],
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=EB+Garamond:wght@500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
