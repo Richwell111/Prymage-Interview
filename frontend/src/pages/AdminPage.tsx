@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
 
 type Ticket = {
   _id: string
@@ -30,7 +29,6 @@ export default function AdminPage() {
   const [alert, setAlert] = useState<{ msg: string; type: 'success' | 'error' } | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   
-  const navigate = useNavigate()
   const userRole = localStorage.getItem("role")
   const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"
 

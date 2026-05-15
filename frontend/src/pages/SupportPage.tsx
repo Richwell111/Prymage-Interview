@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
 
 export default function SupportPage() {
   const [formData, setFormData] = useState({
@@ -12,8 +11,6 @@ export default function SupportPage() {
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [alert, setAlert] = useState<{ msg: string; type: 'success' | 'error' } | null>(null)
-  const navigate = useNavigate()
-
   const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000"
 
   // Auto-hide alerts
